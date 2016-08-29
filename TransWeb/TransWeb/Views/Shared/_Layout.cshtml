@@ -1,0 +1,388 @@
+﻿@*<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>*@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="js-no ie9"> <![endif]-->
+<!--[if IE 10]> <html lang="en" class="js-no ie10"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+    <title>Transcendentpro</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!--  Boostrap Framework  -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--=== CSS - Dragonfly ===-->
+    <link href="assets/css/themes/light-blue.css" rel="stylesheet" id="colors">
+
+    <!--=== LESS - Dragonfly ===-->
+    <!--<link href="assets/less/main.less" rel="stylesheet/less">-->
+    <!-- Google Fonts - Lato -->
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
+
+    <!--  Slippry Slideshow -->
+    <link href="assets/css/slippry.min.css" rel="stylesheet">
+
+</head>
+<body>
+    @*<div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+    <!--===    NAVBAR     ===-->
+    <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Dragon<span class="text-primary">fly</span></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right ">
+
+                    <!--Home Pages -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">
+                            Home
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <a href="index.html">Home - Option 1</a>
+                            </li>
+
+                            <li>
+                                <a href="index-2.html">Home - Option 2</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--Pages-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">Pages</a>
+
+                        <ul class="dropdown-menu">
+
+                            <!-- About Pages -->
+                            <li class="dropdown-submenu">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">About Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="about-us-v1.html">About Us I</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-v2.html">About Us II</a>
+                                    </li>
+                                    <li>
+                                        <a href="about-us-v3.html">About Us III</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+                                <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0" data-close-others="false">Services Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="services-v1.html">Services I</a>
+                                    </li>
+                                    <li>
+                                        <a href="services-v2.html">Services II</a>
+                                    </li>
+                                    <li>
+                                        <a href="services-v3.html">Services III</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="pricing-tables.html">Pricing Tables</a>
+                            </li>
+
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+
+                            <li>
+                                <a href="support.html">Support</a>
+                            </li>
+
+                            <li>
+                                <a href="our-team.html">Our Team</a>
+                            </li>
+
+                            <li>
+                                <a href="sign-in.html">Sign In</a>
+                            </li>
+                            <li>
+                                <a href="sign-up.html">Sign Up</a>
+                            </li>
+
+                            <li>
+                                <a href="404.html">404 Error </a>
+                            </li>
+
+
+                        </ul>
+                    </li>
+
+                    <!--Portfolio-->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">
+                            Portfolio
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li>
+                                <a href="portfolio-v1.html">Portfolio Filter I</a>
+                            </li>
+
+                            <li>
+                                <a href="portfolio-v2.html">Portfolio Filter II</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-v3.html">Portfolio Page III</a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <a href="portfolio-item-v1.html">Portfolio Item I</a>
+                            </li>
+
+                            <li>
+                                <a href="portfolio-item-v2.html">Portfolio Item II</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Blog -->
+                    <li class="dropdown">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">
+                            Blog
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-page.html">Blog Page</a>
+                            </li>
+                            <li>
+                                <a href="blog-item.html">Blog Item</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!--Get Started-->
+                    <li class="dropdown">
+                        <a href="get-started/index.php" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="0">
+                            Get Started
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="get-started/index.php">How to Start - Docs</a>
+                            </li>
+                            <li>
+                                <a href="get-started/elements.php#here">Elements - Blocks of Code</a>
+                            </li>
+                            <li>
+                                <a href="get-started/changelog.php#here">Changelog</a>
+                            </li>
+                            <li>
+                                <a href="get-started/php-tutorial.php#here">PHP Tutorial</a>
+                            </li>
+                            <li>
+                                <a href="get-started/license-and-credits.php#here">Licence &amp; Credits</a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Sidebar -->
+                    <li class="dropdown hidden-xs">
+                        <a href="javascript:void(0);" id="sidebar-btn">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+    </nav>
+    <!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
+    <div id="navbarSpaceBottom"></div>
+    <!--===/END    Navbar     ===-->
+    <!--===    HEADER     ===-->
+    <section class="bg-7 bg-centerTop70 bg-cover">
+        <div class="bg-filter sTop">
+            <div class="container">
+                <div class="jumbotron trn v-center">
+                    <h1>Digital transformation</h1>
+                    <div class="space-sm"></div>
+                    <p>
+                        Dragonfly is based on the newest Twitter Bootstrap 3.2,
+                        <br>The bootstrap template is fully responsive, easy customize and ready for your business.
+                    </p>
+                    <div class="space-sm"></div>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn btn-default-trn btn-xlg scroll"><i class="fa fa-bolt"></i>Start a trial</a>
+                        </li>
+                        <li>
+                            <a href="#learn-more" class="btn btn-primary btn-xlg scroll"><i class="fa fa-paper-plane-o"></i>Learn More</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--===/END      HEADER     ===-->
+
+    <div class="container body-content">
+        @RenderBody()
+        <!--===    FOOTER     ===-->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <h4>Contact</h4>
+                            <ul class="info-list md-list i-primary">
+                                <li>
+                                    <i class="fa fa-envelope fa-fw"></i>
+                                    <a href="mailto:influence.bootstrap@gmail.com">influence.bootstrap@gmail.com</a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-phone fa-fw"></i> +21 902 920 889
+                                </li>
+                                <li>
+                                    <i class="fa fa-map-marker fa-fw"></i> 885 3rd Ave, NY 10022
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-sm visible-sm visible-xs"></div>
+                        <div class="col-md-4 col-lg-4 col-xs-12">
+                            <h4>Quick Links</h4>
+                            <ul class="info-list md-list i-primary">
+                                <li>
+                                    <i class="fa fa-angle-right fa-fw"></i>
+                                    <a href="#">
+                                        <span class="link-title">About Us</span>- Who we are
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right fa-fw"></i>
+                                    <a href="#">
+                                        <span class="link-title">Services</span>- What we do
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right fa-fw"></i>
+                                    <a href="#">
+                                        <span class="link-title">Our Team</span>- Meet our team
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right fa-fw"></i>
+                                    <a href="#">
+                                        <span class="link-title">Portfolio</span>- Our work
+                                    </a>
+                                </li>
+                                <li>
+                                    <i class="fa fa-angle-right fa-fw"></i>
+                                    <a href="#">
+                                        <span class="link-title">Blog</span>- Breaking news
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-sm visible-sm visible-xs"></div>
+                        <div class="col-md-4 col-lg-4  col-xs-12">
+                            <h4>About Us</h4>
+                            <p>Temporibus autem quibusdam et aut officiis debitis ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                            <div class="space-sm"></div>
+                            <h4>Follow Us</h4>
+                            <ul class="circle-icons icons-list">
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-tumblr"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Follow us">
+                                        <i class="fa fa-youtube-play"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>© 2014 Dragonfly. All rights reserved. Theme by Jiri Cermak.</p>
+                </div>
+            </div>
+        </footer>
+        <!--===/END    FOOTER     ===-->
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
