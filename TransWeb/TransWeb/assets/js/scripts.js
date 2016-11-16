@@ -249,12 +249,14 @@ $(document).ready(function() {
                 });
             } else {
                 $navbarTrn.css({
-                    "background-color": "transparent"
+                    // "background-color": "transparent"
+                    "background-color": "rgba(0, 0, 0, 0.8)"
                 });
             }
         } else {
             $navbarTrn.css({
-                "background-color": "transparent"
+                //"background-color": "transparent"
+                "background-color": "rgba(0, 0, 0, 0.8)"
             });
         }
         // add box-shadow

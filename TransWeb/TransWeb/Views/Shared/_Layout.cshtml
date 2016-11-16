@@ -1,70 +1,61 @@
 ﻿@*<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-</head>*@
+    <html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>@ViewBag.Title - My ASP.NET Application</title>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>*@
 <!DOCTYPE html>
 <!--[if IE 9]> <html lang="en" class="js-no ie9"> <![endif]-->
 <!--[if IE 10]> <html lang="en" class="js-no ie10"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
-
 <head>
     <title>Transcendentpro</title>
-
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
-
     <!--  Boostrap Framework  -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
-
     <!--=== CSS - Dragonfly ===-->
     <link href="/assets/css/themes/light-blue.css" rel="stylesheet" id="colors">
-
     <!--=== LESS - Dragonfly ===-->
     <!--<link href="assets/less/main.less" rel="stylesheet/less">-->
     <!-- Google Fonts - Lato -->
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
-
     <!-- Font Awesome Icons -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-
     <!-- CSS Animations -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" rel="stylesheet">
-
     <!--  Slippry Slideshow -->
     <link href="/assets/css/slippry.min.css" rel="stylesheet">
-
 </head>
 <body>
     @*<div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    </ul>
+                </div>
             </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
-    </div>*@
+        </div>*@
     <!--===    NAVBAR     ===-->
     <nav class="navbar navbar-trn navbar-fixed-top" role="navigation" id="navbarSettings" style="box-shadow: 0px 2px 5px rgba(0,0,0,0.2); background-color: rgba(0, 0, 0, 0.8);">
         <div class="container">
@@ -75,55 +66,46 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-    <a class="navbar-brand" href="@Url.Action("Index", "Home")">Transcendent<span class="text-primary">pro</span></a>
-</div>
-
+                <a class="navbar-brand" href="@Url.Action("Index", "Home")">Transcendent<span class="text-primary">pro</span></a>
+            </div>
             <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right ">
-
                     <!--Pages-->
                     <li class="dropdown">
                         <a href="@Url.Action("Index", "Services")">Services</a>
-
-                        
                     </li>
-
                     <li>
-                        <a href="@Url.Action("Index", "Technologies")" >
+                        <a href="@Url.Action("Index", "Technologies")">
                             Technologies
-                        </a>                       
+                        </a>
                     </li>
                     <!--Portfolio-->
                     <li class="dropdown">
-                        <a href="@Url.Action("Index", "Industries")" >
+                        <a href="@Url.Action("Index", "Industries")">
                             Industries
-                        </a>                       
+                        </a>
                     </li>
-
-                   
 
                     <!--Get Started-->
                     <li class="dropdown">
-                        <a href="@Url.Action("About", "Home")" >
+                        <a href="@Url.Action("About", "Home")">
                             About Us
                         </a>
-                        
+
                     </li>
                     <!--Get Started-->
                     <li class="dropdown">
-                        <a href="@Url.Action("Contact", "Home")" >
+                        <a href="@Url.Action("Contact", "Home")">
                             Contact Us
                         </a>
-                        
-                    </li>
 
+                    </li>
                     <!-- Sidebar -->
                     <li class="dropdown hidden-xs">
                         <a href="javascript:void(0);" id="sidebar-btn">
                             <i class="fa fa-bars"></i>
                         </a>
                     </li>
-
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -132,7 +114,6 @@
     <!-- If navbar is fixed to top and it has the class navbar-default or navbar-inverse this div will add space below the navbar-->
     <div id="navbarSpaceBottom"></div>
     <!--===/END    Navbar     ===-->
-   
 
     <div>
         @RenderBody()
@@ -141,15 +122,13 @@
         <a href="#" class="back-to-top">
             <i class="fa fa-angle-up"></i>
         </a>
-
         <!-- Modernizr -->
         <script src="/assets/js/min/modernizr.custom.min.js"></script>
-
         <!-- jQuery -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-
         <!-- Bootstrap JS -->
+
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
         <!-- Bootstrap Plugin - open dropdown on hover -->
@@ -184,11 +163,10 @@
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAhoSzP6ADU8pArfmL82VnfnHJgNo5tJvY"></script>
         <script src="/assets/js/min/initmap.min.js"></script>
         <!--[if lt IE 9]>
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
-          <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+              <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+              <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
         <!--===/END    SCRIPTS     ===-->
-
         <!--===    FOOTER     ===-->
         <footer class="footer">
             <div class="footer-top">
@@ -248,7 +226,7 @@
                         <div class="space-sm visible-sm visible-xs"></div>
                         <div class="col-md-4 col-lg-4  col-xs-12">
                             <h4>About Us</h4>
-                            <p>Temporibus autem quibusdam et aut officiis debitis ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                            <p>Our Values, extensive industry knowledge and commitment to excel enable us to provide highly efficient and cost effective solutions to our customers.</p>
                             <div class="space-sm"></div>
                             <h4>Follow Us</h4>
                             <ul class="circle-icons icons-list">
@@ -292,9 +270,11 @@
         <!--===/END    FOOTER     ===-->
 
     </div>
+    @*@Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")*@
+    <!-- Slippry - Slideshow -->
+    @*<script src="/assets/js/min/slippry.min.js"></script>*@
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
