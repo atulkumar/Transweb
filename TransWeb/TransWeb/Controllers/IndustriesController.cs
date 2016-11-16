@@ -14,9 +14,65 @@ namespace TransWeb.Controllers
             return View();
         }
 
-        public ActionResult Insurence()
+        public ActionResult Insurance()
         {
-            return View("Insurence");
+            return View("Insurance");
+        }
+
+        public ActionResult ELearningAndEducation()
+        {
+            return View("ELearningAndEducation");
+        }
+
+        public ActionResult FinanceAndBanking()
+        {
+            return View("FinanceAndBanking");
+        }
+
+
+        public ActionResult GameAndEntertainment()
+        {
+            return View("GameAndEntertainment");
+        }
+
+        public ActionResult Healthcare()
+        {
+            return View("Healthcare");
+        }
+
+        public ActionResult Hospitality()
+        {
+            return View("Hospitality");
+        }
+
+        public ActionResult Legal()
+        {
+            return View("Legal");
+        }
+
+        public ActionResult Payments()
+        {
+            return View("Payments");
+        }
+
+        public ActionResult Retail()
+        {
+            return View("Retail");
+        }
+
+        public ActionResult SupplyChain()
+        {
+            return View("SupplyChain");
+        }
+
+        public ActionResult Telecommunication()
+        {
+            return View("Telecommunication");
+        }
+
+        public ActionResult Utilities()
+        {
+            return View("Utilities");
         }
     }
 }
