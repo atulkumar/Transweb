@@ -50,8 +50,9 @@
         <div class="col-md-6 col-sm-7">
 
             <!-- Contact Form -->
-            <div id="form-messages"></div>
-            <form class="form-horizontal" role="form" id="ajax-contact" method="post" action="assets/php/mailer.php">
+            <div id="form-messages"></div>            
+@using (Html.BeginForm("Contact", "Home", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "contact-form", role = "form",@class="form-horizontal" }))
+{
                 <div class="form-group icon">
                     <label for="name" class="col-sm-3 control-label">Full name</label>
                     <div class="col-sm-9 ">
@@ -74,7 +75,7 @@
                     <label for="Message" class="col-sm-3 control-label">Message</label>
                     <div class="col-sm-9 ">
                         <div class="control">
-                            <textarea class="form-control" rows="8" id="Message" placeholder="Message" name="message" required></textarea>
+                            <textarea class="form-control" rows="8" id="message" placeholder="Message" name="message" required></textarea>
                             <i class="fa fa-comment"></i>
                         </div>
                     </div>
@@ -82,14 +83,17 @@
 
                 <div class="form-group icon">
                     <div class="col-sm-offset-3 col-sm-9">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fa fa-paper-plane-o"></i>Send Message
-                        </button>
+                        <input type="submit" value="Send Message" name="submit" class="btn btn-primary">                       
                     </div>
                 </div>
-            </form>
-            <div class="space visible-xs"></div>
-        </div>
+           }
+            <div>
+                @ViewBag.Message
+                </div>
+                <div class="space visible-xs">
+                    
+                </div>
+            </div>
 
         <div class="col-md-6 col-sm-5">
             <ul class="list-unstyled info-bar">
